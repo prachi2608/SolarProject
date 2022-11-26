@@ -74,6 +74,46 @@ export const dashboardTableData = [
   },
 ];
 
+export const dashboardSolarData = [
+  { 
+    pan : "Panel 1",
+    ind : "22 DEC 2020",
+    lsk: " 21 NOV 2022",
+    nxk: "21 NOV 2023",
+    doc: "22 DEC 2030",
+    yen: "12.8 kWh",
+    exe: "7.0 kWh" 
+  },
+  { 
+    pan : "Panel 2",
+    ind : "22 DEC 2020",
+    lsk: " 21 NOV 2022",
+    nxk: "21 NOV 2023",
+    doc: "22 DEC 2030",
+    yen: "12.8 kWh",
+    exe: "7.0 kWh" 
+  },
+  { 
+    pan : "Panel 3",
+    ind : "22 DEC 2020",
+    lsk: " 21 NOV 2022",
+    nxk: "21 NOV 2023",
+    doc: "22 DEC 2030",
+    yen: "12.8 kWh",
+    exe: "7.0 kWh" 
+  },
+  { 
+    pan : "Panel 4",
+    ind : "22 DEC 2020",
+    lsk: " 21 NOV 2022",
+    nxk: "21 NOV 2023",
+    doc: "22 DEC 2030",
+    yen: "12.8 kWh",
+    exe: "7.0 kWh" 
+  },
+
+];
+
 export const timelineData = [
   {
     logo: FaBell,
@@ -111,6 +151,7 @@ export const timelineData = [
     date: "18 DEC 4:41 PM",
   },
 ];
+
 export const rtlDashboardTableData = [
   {
     logo: AdobexdLogo,

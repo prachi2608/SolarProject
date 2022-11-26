@@ -19,7 +19,7 @@ import {
   WalletIcon,
 } from "components/Icons/Icons.js";
 import React from "react";
-import { dashboardTableData, timelineData } from "variables/general";
+import { dashboardTableData, timelineData, dashboardSolarData } from "variables/general";
 import ActiveUsers from "./components/ActiveUsers";
 import BuiltByDevelopers from "./components/BuiltByDevelopers";
 import MiniStatistics from "./components/MiniStatistics";
@@ -106,17 +106,23 @@ export default function Dashboard() {
         templateColumns={{ sm: "1fr", md: "1fr 1fr", lg: "2fr 1fr" }}
         templateRows={{ sm: "1fr auto", md: "1fr", lg: "1fr" }}
         gap='24px'>
-        <Projects
+          <Projects
+          title={"Panels"}
+          amount={10}
+          captions={["Panel #", "Installation date", "Last checked", "Next check due", "Date of change", "Yield energy", "Exported energy"]}
+          data={dashboardSolarData}
+        />
+        {/* <Projects
           title={"Projects"}
           amount={30}
           captions={["Companies", "Members", "Budget", "Completion"]}
           data={dashboardTableData}
-        />
-        <OrdersOverview
+        /> */}
+        {/* <OrdersOverview
           title={"Orders Overview"}
           amount={30}
           data={timelineData}
-        />
+        /> */}
       </Grid>
     </Flex>
   );

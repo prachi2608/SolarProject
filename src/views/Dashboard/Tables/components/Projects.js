@@ -44,12 +44,15 @@ const Projects = ({ title, captions, data }) => {
             {data.map((row) => {
               return (
                 <TablesProjectRow
-                  key={row.name}
-                  name={row.name}
-                  logo={row.logo}
-                  status={row.status}
-                  budget={row.budget}
-                  progression={row.progression}
+                key={row.pan}
+                name={row.pan}
+                pan={row.pan}
+                ind={row.ind}
+                lsk={row.lsk}
+                nxk={row.nxk}
+                doc={row.doc}
+                yen={row.yen}
+                exe={row.exe}
                 />
               );
             })}

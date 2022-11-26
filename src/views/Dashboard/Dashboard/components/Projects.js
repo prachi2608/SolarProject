@@ -37,9 +37,8 @@ const Projects = ({ title, amount, captions, data }) => {
             />
             <Text fontSize='sm' color='gray.400' fontWeight='normal'>
               <Text fontWeight='bold' as='span'>
-                {amount} done
+                {amount} panels installed.
               </Text>{" "}
-              this month.
             </Text>
           </Flex>
         </Flex>
@@ -60,12 +59,15 @@ const Projects = ({ title, amount, captions, data }) => {
           {data.map((row) => {
             return (
               <DashboardTableRow
-                key={row.name}
-                name={row.name}
-                logo={row.logo}
-                members={row.members}
-                budget={row.budget}
-                progression={row.progression}
+                key={row.pan}
+                name={row.pan}
+                pan={row.pan}
+                ind={row.ind}
+                lsk={row.lsk}
+                nxk={row.nxk}
+                doc={row.doc}
+                yen={row.yen}
+                exe={row.exe}
               />
             );
           })}
